@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -22,80 +22,79 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="150dp"
-                android:layout_height="115dp"
-                android:layout_marginTop="68dp"
+                android:layout_width="146dp"
+                android:layout_height="156dp"
+                app:layout_constraintBottom_toTopOf="@+id/txtMail"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:loyout_constraintStart_toStart="parent"
-                app:srcCompat="@drawable/icon_user"/>
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
 
-            <LinearLayout
-                android:id="@+id/linearLayout5"
-                android:layout_width="330dp"
-                android:layout_height="200dp"
-                android:layout_marginTop="76dp"
-                android:orientation="vertical"
-                tools:ignore="MissingConstraints">
+                app:srcCompat="@drawable/icon_user" />
 
-                <EditText
-                    android:id="@+id/txtMail"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="70dp"
-                    android:layout_marginEnd="20dp"
-                    android:drawableLeft="@drawable/icon_feather_mail"
-                    android:ems="10"
-                    android:hint="Correo"
-                    android:inputType="textEmailAddress"
-                    android:paddingLeft="15dp" />
-
-                <EditText
-                    android:id="@+id/txtPassword"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/icon_feather_lock"
-                    android:ems="10"
-                    android:hint="Contraseña"
-                    android:inputType="textPassword"
-                    android:paddingLeft="15dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:layout_marginTop="30dp"
-                    />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/linearLayout4"
+            <EditText
+                android:id="@+id/txtMail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                tools:ignore="MissingConstraints">
+                android:drawableLeft="@drawable/icon_feather_mail"
+                android:ems="10"
+                android:hint="Correo"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                android:paddingLeft="15dp"
+                app:layout_constraintBottom_toTopOf="@id/txtPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageView" />
 
-                <Button
-                    android:id="@+id/btnLogin"
-                    android:layout_width="140dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="70dp"
-                    android:background="#B019D2"
-                    android:text="Iniciar sesión"
-                    android:textColor="#FFF"
-                    android:textSize="17sp"></Button>
+            <EditText
+                android:id="@+id/txtPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_feather_lock"
+                android:ems="10"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:paddingLeft="15dp"
+                app:layout_constraintBottom_toTopOf="@id/btnLogin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtMail" />
 
-                <Button
-                    android:id="@+id/btnCerrar"
-                    android:layout_width="140dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="50dp"
-                    android:layout_marginTop="70dp"
-                    android:background="#F44336"
-                    android:text="Cerrar sesión"
-                    android:textColor="#FFF"
-                    android:textSize="17sp"></Button>
-            </LinearLayout>
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="133dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="100dp"
+                android:background="#B019D2"
+                android:text="Iniciar sesión"
+                android:textColor="#FFF"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnCerrar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtPassword"></Button>
 
-        </LinearLayout>
+            <Button
+                android:id="@+id/btnCerrar"
+                android:layout_width="142dp"
+                android:layout_height="64dp"
+                android:layout_marginEnd="5dp"
+                android:background="#F44336"
+                android:text="Cerrar sesión"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/btnLogin"
+                app:layout_constraintTop_toBottomOf="@id/txtPassword"
+                app:layout_constraintVertical_bias="0.289"></Button>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
