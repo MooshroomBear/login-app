@@ -4,8 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Ejemplos/LoginApp/app/src/main/res/drawable/boton_redondo.xml" value="0.2145" />
+        <entry key="..\:/Ejemplos/LoginApp/app/src/main/res/drawable/botones_de_redes.xml" value="0.1" />
+        <entry key="..\:/Ejemplos/LoginApp/app/src/main/res/drawable/botones_redondos.xml" value="0.2155" />
         <entry key="..\:/Ejemplos/LoginApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Ejemplos/LoginApp/app/src/main/res/layout/activity_main2.xml" value="0.4501679731243001" />
+        <entry key="..\:/Ejemplos/LoginApp/app/src/main/res/layout/activity_main2.xml" value="0.25015556938394523" />
+        <entry key="..\:/Ejemplos/LoginApp/app/src/main/res/layout/activity_registro.xml" value="0.5" />
+        <entry key="..\:/Ejemplos/LoginApp/app/src/main/res/layout/principal.xml" value="0.33" />
         <entry key="..\:/LoginApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/LoginApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
       </map>
